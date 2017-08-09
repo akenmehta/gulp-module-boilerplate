@@ -71,5 +71,6 @@ gulp.task('default', ['styles', 'images', 'scripts', 'templates'], function(){
 	gulp.watch('src/styles/**/*.scss', ['styles']);
 	gulp.watch('src/img/**/*', ['images']);
 	gulp.watch('src/scripts/**/*.js', ['scripts']);
-	gulp.watch('*.html', browserSync.reload);
+	gulp.watch('src/templates/**/*.hbs', ['templates']);
+  gulp.watch('*.html', browserSync.reload);
 });
